@@ -1,0 +1,103 @@
+html, body {
+    /*background-color: black;*/
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    margin: 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: calc(25% - 30px);
+    border-radius: 10px;
+    border: 1px solid #a7a7a7;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.primary {
+    background-color: #069f06;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 0;
+    padding: 7px;
+    text-transform: uppercase;
+}
+
+.primary:focus {
+    outline: none;
+}
+
+.primary:hover {
+    background-color: #057905;
+}
+
+.primary:active {
+    background-color: #058305;
+}
+
+.text-teal {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.product-title {
+    padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .container {
+        max-width: 960px;
+    }
+
+    .col {
+        width: calc(33% - 30px);
+    }
+}
+
+@media screen and (max-width: 762px){
+    .container {
+        max-width: 720px;
+    }
+
+    .col {
+        width: calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 568px){
+    .container {
+        max-width: 540px;
+    }
+
+    .col {
+        width: calc(100% - 30px);
+    }
+}
